@@ -47,5 +47,16 @@ describe('axios instance inherits interceptors', () => {
             expect(fulfilled).to.equal(fulfilledHandler);
             expect(rejected).to.equal(rejectedHandler);
         });
+        it('should eject interceptors from children', () => {
+            const axios = require('axios');
+            axiosInheritance(axios);
+            const fulfilledHandler = () => null;
+            const rejectedHandler = () => null;
+            const instance = axios.create();
+            const interceptor = axios.interceptors[type].use(fulfilledHandler, rejectedHandler);
+            expect(instance.interceptors[type].handlers.filter(Boolean)).to.be.lengthOf(1);
+            axios.interceptors[type].eject(interceptor);
+            expect(instance.interceptors[type].handlers.filter(Boolean)).to.be.lengthOf(0);
+        });
     }));
 });
