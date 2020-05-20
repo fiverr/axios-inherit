@@ -1,4 +1,4 @@
-# axios-inheritance
+# axios-inheritance [![](https://img.shields.io/circleci/build/github/fiverr/axios-inheritance?style=flat-square)](https://circleci.com/gh/fiverr/axios-inheritance) [![](https://img.shields.io/npm/v/axios-inheritance.svg?style=flat-square)](https://www.npmjs.com/package/axios-inheritance)
 
 👨‍👦 Add interceptor inheritance to axios
 
