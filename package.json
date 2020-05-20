@@ -1,0 +1,34 @@
+{
+  "name": "axios-inherit",
+  "version": "1.0.0",
+  "description": "👨‍👦 Add interceptor inheritance to axios",
+  "keywords": [
+    "axios",
+    "interceptors",
+    "inheritance",
+    "inherit",
+    "👨‍👦"
+  ],
+  "author": "Fiverr SRE",
+  "license": "MIT",
+  "homepage": "https://github.com/fiverr/axios-inherit/",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/fiverr/axios-inherit.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha 'spec.js'",
+    "lint": "eslint '**/*.js'"
+  },
+  "devDependencies": {
+    "@fiverr/eslint-config-fiverr": "^3.2.0",
+    "axios": "^0.19.2",
+    "clear-module": "^4.1.1",
+    "eslint": "^7.0.0",
+    "eslint-plugin-log": "^1.2.3",
+    "jest": "^26.0.1",
+    "chai": "^4.2.0",
+    "mocha": "^7.1.2"
+  }
+}
