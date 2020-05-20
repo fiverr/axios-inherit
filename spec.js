@@ -1,9 +1,10 @@
 const { expect } = require('chai');
 const clearModule = require('clear-module');
+const axios = require('axios');
 const axiosInheritance = require('.');
 
 describe('axios instance inherits interceptors', () => {
-    ['request', 'response'].forEach((type) => describe(type, () => {
+    Object.keys(axios.interceptors).forEach((type) => describe(type, () => {
         afterEach(() => {
             clearModule('axios');
         });
