@@ -22,13 +22,16 @@
     "lint": "eslint '**/*.js'"
   },
   "devDependencies": {
-    "@fiverr/eslint-config-fiverr": "^3.2.0",
-    "axios": "^0.19.2",
-    "clear-module": "^4.1.1",
-    "eslint": "^7.0.0",
-    "eslint-plugin-log": "^1.2.3",
-    "jest": "^26.0.1",
+    "@fiverr/eslint-config-fiverr": "^3.2.2",
+    "axios": "^0.21.1",
     "chai": "^4.2.0",
-    "mocha": "^7.1.2"
+    "clear-module": "^4.1.1",
+    "eslint": "^7.17.0",
+    "eslint-plugin-log": "^1.2.7",
+    "jest": "^26.6.3",
+    "mocha": "^8.2.1"
+  },
+  "peerDependencies": {
+    "axios": "*"
   }
 }
