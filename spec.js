@@ -67,5 +67,23 @@ describe('axios instance inherits interceptors', () => {
             instance.interceptors[type].use(fulfilledHandler, rejectedHandler);
             expect(axios.interceptors[type].handlers).to.be.lengthOf(0);
         });
+        it('should be able to remove a default header from instance w/o affecting the parent', () => {
+            const axios = require('axios');
+            const someHeaders = () => ({
+                'Accept': 'application/json',
+                'X-Custom-Header': 'something'
+            });
+            const allHeaders = () => ({
+                ...someHeaders(),
+                'X-Other-Header': 'something-else'
+            });
+            Object.assign( axios.defaults.headers.common, allHeaders() );
+            const instance = axios.create();
+            expect(instance.defaults.headers.common).to.deep.equal(allHeaders());
+            delete instance.defaults.headers.common['X-Other-Header'];
+            expect(axios.defaults.headers.common).to.deep.equal(allHeaders());
+            expect(instance.defaults.headers.common).not.to.deep.equal(allHeaders());
+            expect(instance.defaults.headers.common).to.deep.equal(someHeaders());
+        });
     }));
 });
