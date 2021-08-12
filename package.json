@@ -1,6 +1,6 @@
 {
   "name": "axios-inherit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "👨‍👦 Add interceptor inheritance to axios",
   "keywords": [
     "axios",
@@ -17,6 +17,7 @@
     "url": "git+ssh://git@github.com/fiverr/axios-inherit.git"
   },
   "main": "index.js",
+  "types": "types.d.ts",
   "scripts": {
     "test": "mocha 'spec.js'",
     "lint": "eslint '**/*.js'"
