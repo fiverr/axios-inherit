@@ -9,7 +9,7 @@
     "inherit",
     "👨‍👦"
   ],
-  "author": "Fiverr SRE",
+  "author": "Fiverr",
   "license": "MIT",
   "homepage": "https://github.com/fiverr/axios-inherit/",
   "repository": {
@@ -23,14 +23,14 @@
     "lint": "eslint '**/*.js'"
   },
   "devDependencies": {
-    "@fiverr/eslint-config-fiverr": "^3.2.2",
-    "axios": "^0.21.1",
-    "chai": "^4.2.0",
+    "@fiverr/eslint-config-fiverr": "^3.2.5",
+    "axios": "^0.24.0",
+    "chai": "^4.3.4",
     "clear-module": "^4.1.1",
-    "eslint": "^7.17.0",
+    "eslint": "^8.1.0",
     "eslint-plugin-log": "^1.2.7",
-    "jest": "^26.6.3",
-    "mocha": "^8.2.1"
+    "jest": "^27.3.1",
+    "mocha": "^9.1.3"
   },
   "peerDependencies": {
     "axios": "*"
